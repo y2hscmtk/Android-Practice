@@ -14,3 +14,15 @@
 
 ---
 
+### 2. ItemHelper example Code
+> 리사이클러뷰의 뷰를 조작하기 위한 ItemHelper.Callback 예시 코드
+
+### Code
+	- GroupRecyclerViewAdapterWithItemHelper.kt : Adapter with ItemHelper Callback
+	- Group.kt : DTO
+ 	- ItemTouchHelperCallback.kt : ItemTouchHelperCallback, ItemTouchHelperListner(interface)
+
+### Layout
+	- activity_item_helper_practice.xml
+	- item_group.xml
+	- drawalbe/shape_round.xml

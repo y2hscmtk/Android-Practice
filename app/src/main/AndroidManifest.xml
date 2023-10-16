@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AndroidPractice"
         tools:targetApi="31">
         <activity
-            android:name=".CustomViewActivity"
+            android:name=".customview.CustomViewActivity"
             android:exported="true">
 
             <intent-filter>

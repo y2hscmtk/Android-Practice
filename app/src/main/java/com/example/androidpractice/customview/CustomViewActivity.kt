@@ -2,6 +2,8 @@ package com.example.androidpractice.customview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.RadioGroup
 import com.example.androidpractice.R
 
 
@@ -46,5 +48,17 @@ class CustomViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_view)
+
+        val myView = findViewById<MyView>(R.id.view) //xml로부터 id가 view인 MyView인 참조 얻어오기
+        val radioGroup = findViewById<RadioGroup>(R.id.radio_group)
+        //사용자가 선택한 모양에 따라 모양 변경
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            when(checkedId){
+                R.id.radioRect -> myView.changeShape(MyView.ShapeType.RECTANGLE)
+                R.id.radioCircle -> myView.changeShape(MyView.ShapeType.CIRCLE)
+            }
+            //모양을 변경했으니, 다시 그려달라는 요청을 해야함 invalidate()
+            myView.invalidate() //다시 그려주기 => 변경된 모양으로
+        }
     }
 }

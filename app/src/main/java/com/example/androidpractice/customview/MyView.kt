@@ -28,10 +28,16 @@ class MyView : View {
     constructor(context: Context?) : super(context) //Activity에서 setContent시에 주입
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) //레이아웃에서 view tag를 사용하여 뷰를 그릴 때 필요
 
+    //모양 설정
+    public fun changeShape(shape:ShapeType){
+        this.currentShapeType = shape
+    }
+
 
     //시스템이 화면을 그려줄 때 호출
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        this.setBackgroundColor(Color.YELLOW)
         paint.color = color
         //사용자가 선택한 모양 정보에 맞춰서 다른 모양을 그려주기 위함
         when (currentShapeType) {

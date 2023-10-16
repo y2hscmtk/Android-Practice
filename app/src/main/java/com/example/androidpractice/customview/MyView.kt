@@ -10,10 +10,12 @@ import android.view.MotionEvent
 import android.view.View
 
 
+enum class ShapeType {
+    RECTANGLE, CIRCLE
+}
+
 class MyView : View {
-    enum class ShapeType {
-        RECTANGLE, CIRCLE
-    }
+
 
     //화면에 그려줄 모양
     private var currentShapeType = ShapeType.RECTANGLE
@@ -23,13 +25,13 @@ class MyView : View {
 
 
     private var color = Color.BLUE
-    private var paint = Paint()
+    private var paint = Paint() //화면에 사각형을 그려주기 위해 사용
 
     constructor(context: Context?) : super(context) //Activity에서 setContent시에 주입
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) //레이아웃에서 view tag를 사용하여 뷰를 그릴 때 필요
 
-    //모양 설정
-    public fun changeShape(shape:ShapeType){
+    //그려줄 모양 설정 => 라디오 버튼이 변경되었을때 동작
+    fun changeShape(shape:ShapeType){
         this.currentShapeType = shape
     }
 

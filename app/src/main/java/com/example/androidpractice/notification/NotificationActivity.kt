@@ -20,7 +20,7 @@ import androidx.core.app.NotificationManagerCompat
 import com.example.androidpractice.R
 
 
-/* <Notification> - 고급 안드로이드 프로그래밍 Week1
+/* <Notification> - 고급 안드로이드 프로그래밍 Week2
 * document : https://developer.android.com/develop/ui/views/notifications
 * - 권한 설정
 * : 안드로이드 13 (API 33) 부터 알림 표시를 위한 동적 권한 필요

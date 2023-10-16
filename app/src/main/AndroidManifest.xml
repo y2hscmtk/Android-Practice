@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +15,31 @@
         android:theme="@style/Theme.AndroidPractice"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- 1.recyclerview-->
+        <activity
+            android:name=".recyclerview.RecyclerViewPracticeActivity"
+            android:exported="true" />
+        <!-- 2.itemHelper-recyclerview-->
+
+        <activity
+            android:name=".recyclerview.ItemHelperPracticeActivity"
+            android:exported="true">
+
+        </activity>
+
+        <!--3.customView-->
+        <activity
             android:name=".customview.CustomViewActivity"
+            android:exported="true">
+
+        </activity>
+
+        <!--4.notification-->
+        <activity
+            android:name=".notification.NotificationActivity"
             android:exported="true">
 
             <intent-filter>
@@ -21,16 +47,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".recyclerview.RecyclerViewPracticeActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".recyclerview.ItemHelperPracticeActivity"
-            android:exported="true">
+
         </activity>
     </application>
 

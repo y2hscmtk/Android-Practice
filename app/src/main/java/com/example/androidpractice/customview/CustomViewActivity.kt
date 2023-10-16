@@ -6,7 +6,7 @@ import android.widget.RadioGroup
 import com.example.androidpractice.R
 
 
-/* <CustomView>
+/* <CustomView> - 고급 안드로이드 프로그래밍 Week1
 * 안드로이드에서 제공하지 않는 UI요소, 애니메이션 등을 개발할때 사용
 * View를 상속하여 외형을 그리고,UI이벤트를 처리함
 * 1. View 클래스 함수

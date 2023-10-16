@@ -1,4 +1,4 @@
-package com.example.androidpractice
+package com.example.androidpractice.recyclerview
 
 import android.util.Log
 import androidx.recyclerview.widget.ItemTouchHelper

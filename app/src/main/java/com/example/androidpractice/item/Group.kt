@@ -1,4 +1,4 @@
-package com.example.androidpractice
+package com.example.androidpractice.item
 
 
 // 3.아이템 값 DTO

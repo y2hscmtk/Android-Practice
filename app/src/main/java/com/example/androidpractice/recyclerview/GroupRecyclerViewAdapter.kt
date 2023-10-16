@@ -1,4 +1,4 @@
-package com.example.androidpractice
+package com.example.androidpractice.recyclerview
 
 import android.content.Context
 import android.content.DialogInterface
@@ -9,6 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidpractice.R
+import com.example.androidpractice.item.Group
 
 // 4.아이템을 유지/관리하는 Adapter
 class GroupRecyclerViewAdapter(var groups: Array<Group>, var context: Context) : //화면에 데이터를 붙이기 위해 context가 필요함

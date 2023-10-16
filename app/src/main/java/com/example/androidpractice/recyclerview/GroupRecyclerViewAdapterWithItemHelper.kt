@@ -1,4 +1,4 @@
-package com.example.androidpractice
+package com.example.androidpractice.recyclerview
 
 import android.content.Context
 import android.content.DialogInterface
@@ -10,10 +10,13 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidpractice.R
+import com.example.androidpractice.item.Group
 
 //삽입과 삭제, 수정이 필요하므로 전달받는 데이터 리스트를 MutableList타입으로 받아야함
 class GroupRecyclerViewAdapterWithItemHelper(var groups: MutableList<Group>, var context: Context):
-    RecyclerView.Adapter<GroupRecyclerViewAdapterWithItemHelper.ViewHolder>(),ItemTouchHelperListener {
+    RecyclerView.Adapter<GroupRecyclerViewAdapterWithItemHelper.ViewHolder>(),
+    ItemTouchHelperListener {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         lateinit var tv_group_name: TextView // 그룹의 이름을 보여주기 위함

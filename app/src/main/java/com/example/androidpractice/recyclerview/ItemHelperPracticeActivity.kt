@@ -1,10 +1,12 @@
-package com.example.androidpractice
+package com.example.androidpractice.recyclerview
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidpractice.R
+import com.example.androidpractice.item.Group
 
 
 /* ItemHelper.callback

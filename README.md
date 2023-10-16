@@ -26,3 +26,16 @@
 	- activity_item_helper_practice.xml
 	- item_group.xml
 	- drawalbe/shape_round.xml
+
+
+ ---
+
+### 3. CustomView
+> View를 상속받아 사용자가 원하는 CustomView를 보여주기 위한 예시 코드, 사용자의 선택에 따라 사각형과 원을 클릭한 위치에 그려준다.
+
+### Code
+	- CustomViewActivity.kt : Container about CustomView
+	- MyView.kt : CutomView
+
+### Layout
+	- activity_custom_view.xml : using 'view' tag

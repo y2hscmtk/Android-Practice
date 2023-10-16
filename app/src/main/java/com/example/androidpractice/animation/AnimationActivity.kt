@@ -66,6 +66,15 @@ import com.example.androidpractice.R
 *
 * */
 
+/* <Used Class>
+* AnimationActivity.kt : Activity, Transition Root View
+*
+* <Used layout>
+* activity_animation.xml
+* layout_student.xml : scene1
+* layout_staff.xml : scene2
+* */
+
 
 //데이터를 저장하기 위한 데이터 => 화면 전환 이후에도 값을 유지 하기 위해
 class AnimationActivityViewModel : ViewModel() {

@@ -19,14 +19,19 @@ import com.example.androidpractice.R
 * - Invalidate()
 * : View를 다시 그리고 싶을때 호출 자바에서 repaint()에 해당
 * : 예를 들어 터치할 때마다 invalidate()를 호출하여 뷰의 위치가 움직이는 것 처럼 보여줄 수 있다.
-* 3. TouchEvent()
+* 3. TouchE vent()
 * : View의 onTouchEvent()를 Override하여 뷰에 대한 터치 이벤트 처리 가능
 * : 이벤트 처리 후 반드시 true를 리턴해야함 => 리턴하지 않으면 터치 이벤트가 제대로 수행 되지 않을 수 있음
 * : view에 직접 setOnClickListener를 등록하더라도, view의 onTouchEvent에서 true를 리턴한다면 동작하지 않음(터치 이벤트가 종료되므로)
 * : view에 직접 터치이벤트를 적용시키고 싶다면?
 * : - onTouchEvent에서 true를 리턴하지 않도록 한다.
 * : - performClick()을 호출한다.
+*
+* 화면을 클릭하면 사각형의 위치를 동적으로 변환하는(다시 그려주는) 예제
 * */
+
+
+
 
 /* <Used Class>
 * CustomViewActivity.kt : Container about CustomView

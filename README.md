@@ -52,4 +52,17 @@
 ### Layout
 	- activity_notification.xml
 
+ ---
+
+### 5. Animation
+> 고급 안드로이드 프로그래밍 Week3 : Transition을 활용한 씬 변환
+
+### Code
+	- AnimationActivity.kt : Activity, Transition Root View
+ 
+### Layout
+	- activity_animation.xml
+	- layout_student.xml : scene1
+	- layout_staff.xml : scene2
+
  

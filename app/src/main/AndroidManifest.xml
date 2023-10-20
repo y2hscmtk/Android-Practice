@@ -15,9 +15,8 @@
         android:theme="@style/Theme.AndroidPractice"
         tools:targetApi="31">
         <activity
-            android:name=".room.RoomActivity"
+            android:name=".capture.ScreenCaptureActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,10 +24,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".animation.AnimationActivity"
+            android:name=".room.RoomActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".animation.AnimationActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" /> <!-- 1.recyclerview -->
@@ -37,13 +39,13 @@
             android:exported="true" /> <!-- 2.itemHelper-recyclerview -->
         <activity
             android:name=".recyclerview.ItemHelperPracticeActivity"
-            android:exported="true"></activity> <!-- 3.customView -->
+            android:exported="true" /> <!-- 3.customView -->
         <activity
             android:name=".customview.CustomViewActivity"
-            android:exported="true"></activity> <!-- 4.notification -->
+            android:exported="true" /> <!-- 4.notification -->
         <activity
             android:name=".notification.NotificationActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

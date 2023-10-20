@@ -65,4 +65,29 @@
 	- layout_student.xml : scene1
 	- layout_staff.xml : scene2
 
+  ---
+
+### 6. Room
+> 고급 안드로이드 프로그래밍 Week4 : Room을 활용한 데이터 저장
+
+### Code
+	- RoomActivity.kt : Activity
+	- MyDao.kt : DAO Class
+	- MyDatabase : database abstract define
+	- Schema.kt : database table define
+ 
+### Layout
+	- activity_room.xml
+
+### Plugin
+	- id("com.google.devtools.ksp") //room dependency plugin
+
+### Dependencies
+	- implementation("androidx.room:room-runtime:$roomVersion")
+	- annotationProcessor("androidx.room:room-compiler:$roomVersion")
+	- ksp("androidx.room:room-compiler:$roomVersion")
+	- implementation("androidx.room:room-ktx:$roomVersion")
+	- testImplementation("androidx.room:room-testing:$roomVersion")
+
+
  

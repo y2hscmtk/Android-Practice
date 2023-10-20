@@ -89,5 +89,21 @@
 	- implementation("androidx.room:room-ktx:$roomVersion")
 	- testImplementation("androidx.room:room-testing:$roomVersion")
 
+   ---
+
+### 7. Screen Capture
+> View를 Bitmap으로 변환하여 이미지 파일로 저장
+
+### Code
+	- ScreenCaptureActivity.kt
+ 
+### Layout
+	- activity_screen_capture.xml
+
+ 
+
+
+ 
+
 
  

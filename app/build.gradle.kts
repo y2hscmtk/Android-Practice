@@ -38,6 +38,10 @@ android {
 
 dependencies {
 
+    //swipe recyclerview - swiperefreshlayout
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
+
     //room dependencies
     val roomVersion = "2.5.2"
     implementation("androidx.room:room-runtime:$roomVersion")

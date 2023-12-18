@@ -8,4 +8,69 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#B6B6B6</color>
+
+    <color name="transparent">#00FFFF00</color>
+    <color name="translucence">#65000000</color>
+    <color name="mainRed">#FF6746</color>
+    <color name="mainGreen">#00C1C1</color>
+    <color name="mainGray">#838A8A</color>
+    <color name="white2">#F5F5F5</color>
+    <color name="red">#F44336</color>
+    <color name="mainLightGray">#f5f5f5</color>
+    <color name="calendarTodoText">#49454F</color>
+
+    <!-- 카테고리 기본 색상 -->
+    <color name="categoryColor1">#DE9BAC</color>
+    <color name="categoryColor2">#A0A3F2</color>
+    <color name="categoryColor3">#A7C9F7</color>
+    <color name="categoryColor4">#F6D68C</color>
+    <color name="categoryColor5">#E8C1C1</color>
+    <color name="categoryColor6">#C9BAF3</color>
+    <color name="categoryColor7">#C5CACA</color>
+    <color name="categoryColor8">#9E9EA3</color>
+    <color name="categoryColor9">#B5E1B2</color>
+    <color name="categoryColor10">#FFB877</color>
+
+    <!-- 앱 색상들-->
+    <color name="MainFontColor">#00C1C1</color>
+    <color name="PrimaryColor">#00D6D6</color>
+    <color name="SubColor1">#E1FFFD</color>
+    <color name="Black">#191919</color>
+    <color name="Gray6">#323232</color>
+    <color name="Gray5">#4B4B4A</color>
+    <color name="Gray4">#646463</color>
+    <color name="Gray3">#979795</color>
+    <color name="Gray2">#C9C9C6</color>
+    <color name="Gray1">#E2E2DF</color>
+    <color name="White">#FAF9F6</color>
+
+    <!--Green-->
+    <color name="Green5">#007077</color>
+    <color name="Green4">#00A6A6</color>
+    <color name="Green3">#00D6D6</color>
+    <color name="Green2">#7DEAEA</color>
+    <color name="Green1">#CBFFFF</color>
+
+    <!--Palette Colors-->
+    <color name="palette_color1">#F8C7C3</color>
+    <color name="palette_color2">#E8959E</color>
+    <color name="palette_color3">#CC93A2</color>
+    <color name="palette_color4">#805B63</color>
+    <color name="palette_color5">#8A7A97</color>
+    <color name="palette_color6">#BAD6EB</color>
+    <color name="palette_color7">#6F96D1</color>
+    <color name="palette_color8">#BAD6EB</color>
+    <color name="palette_color9">#091F5B</color>
+    <color name="palette_color10">#F7F4C7</color>
+    <color name="palette_color11">#DE9BAC</color>
+    <color name="palette_color12">#A0A3F2</color>
+    <color name="palette_color13">#A7C9F7</color>
+    <color name="palette_color14">#F6D68C</color>
+    <color name="palette_color15">#E8C1C1</color>
+    <color name="palette_color16">#C9BAF3</color>
+    <color name="palette_color17">#CAD1E0</color>
+    <color name="palette_color18">#9E9EA3</color>
+    <color name="palette_color19">#B5E1B2</color>
+    <color name="palette_color20">#FFB877</color>
+
 </resources>

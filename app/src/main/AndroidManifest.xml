@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AndroidPractice"
         tools:targetApi="31">
         <activity
-            android:name=".recyclerview.SwipeRecyclerViewActivity"
+            android:name=".Custom.CustomRadioButtonActivity"
             android:exported="true">
 
             <intent-filter>
@@ -25,12 +25,14 @@
             </intent-filter>
 
         </activity>
-
         <activity
-            android:name=".capture.ScreenCaptureActivity"
+            android:name=".recyclerview.SwipeRecyclerViewActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".capture.ScreenCaptureActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".room.RoomActivity"
             android:exported="true" />

@@ -39,9 +39,8 @@ class SwipeHelper : ItemTouchHelper.Callback()  {
 
         // Drag와 Swipe 가능 방향을 결정한다.
         // Drag는 사용하지 않을 것이므로 0으로 둔다.
-        // Swipe의 경우는 오른쪽에서 왼쪽으로만 가능하게 설정하였다.
-        // 양방향 모두 하고 싶다면 'ItemTouchHelper.LEFT or ItemTouchHelper.Right' 로 설정한다.
-        return makeMovementFlags(0, ItemTouchHelper.LEFT)
+        // 양방향 모두 하고 싶다면 'ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT' 로 설정한다.
+        return makeMovementFlags(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT)
     }
 
     // 아이템이 드래그 될 경우 호출된다.(위-아래)
@@ -109,9 +108,12 @@ class SwipeHelper : ItemTouchHelper.Callback()  {
             if (isClamped) maxSwipeDistance else 0f  // 스와이프 상태가 고정된 경우, 고정 위치로 설정
         }
 
-        getDefaultUIUtil().onDraw(c, recyclerView, view, x, dY, actionState, isCurrentlyActive)
+        // 뷰의 위치를 업데이트할 필요가 있을 때만 실행
+        if (view.translationX != x) {
+            view.translationX = x
+            getDefaultUIUtil().onDraw(c, recyclerView, view, x, dY, actionState, isCurrentlyActive)
+        }
     }
-
 
 
     //우리의 목표는 swipe_view 부분만 스와이프 시키는 것임
@@ -162,9 +164,6 @@ class SwipeHelper : ItemTouchHelper.Callback()  {
         //return super.getSwipeThreshold(viewHolder)
 
         Log.d("AppTest", "getSwipeThreshold")
-        //val isClamped = getClamped(viewHolder as RvAdapter.MyDataViewHolder)
-        //val isClamped =getTag(viewHolder)
-
         // 현재 View가 고정되어있지 않고 사용자가 -clamp 이상 swipe시 isClamped true로 변경 아닐시 false로 변경 처리 할 것!!!
 
         Log.d("AppTest", "isClamped = ${currentDx <= -clamp}")
@@ -191,11 +190,6 @@ class SwipeHelper : ItemTouchHelper.Callback()  {
     private fun setTag(viewHolder: RecyclerView.ViewHolder, isClamped: Boolean) {
         // isClamped를 view의 tag로 관리
         viewHolder.itemView.tag = isClamped
-    }
-
-    private fun getTag(viewHolder: RecyclerView.ViewHolder) : Boolean {
-        // isClamped를 view의 tag로 관리
-        return viewHolder.itemView.tag as? Boolean ?: false
     }
 
     fun removePreviousClamp(recyclerView: RecyclerView) {

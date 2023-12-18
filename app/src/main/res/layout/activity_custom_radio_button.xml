@@ -6,19 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".Custom.CustomRadioButtonActivity">
 
-    <RadioButton
-        android:id="@+id/btn_great"
-        android:layout_width="50dp"
-        android:layout_height="26dp"
-        android:text="3"
-        android:textSize="11dp"
-        android:paddingLeft="3dp"
-        android:button="@drawable/radio_button_like"
-        android:background="@drawable/shape_custom_radio_round"
-        android:backgroundTint="@color/mainLightGray"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"/>
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:text="3"
+            android:textSize="11dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_like"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:text="3"
+            android:textSize="11dp"
+            android:paddingLeft="3dp"
+            android:background="@drawable/shape_custom_radio_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:text="3"
+            android:textSize="11dp"
+            android:paddingLeft="3dp"
+            android:button="@drawable/radio_button_like"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <CheckBox
+            android:id="@+id/cbx_like"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:text="3"
+            android:textSize="11dp"
+            android:paddingLeft="3dp"
+            android:background="@drawable/shape_custom_radio_round"
+            android:button="@drawable/radio_button_like"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

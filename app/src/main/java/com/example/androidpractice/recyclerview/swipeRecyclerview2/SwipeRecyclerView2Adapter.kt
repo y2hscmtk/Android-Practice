@@ -34,8 +34,11 @@ class SwipeRecyclerView2Adapter : RecyclerView.Adapter<ItemVIewHolder>() {
 
     // 아이템 삭제
     private fun removeItem(viewHolder: RecyclerView.ViewHolder){
-        list.remove(viewHolder.adapterPosition) //remove data
-        notifyItemRemoved(viewHolder.adapterPosition) //remove item
+
+        val position = viewHolder.adapterPosition
+
+        list.remove(position) //remove data
+        notifyItemRemoved(position) //remove item
     }
 
     override fun getItemCount(): Int {

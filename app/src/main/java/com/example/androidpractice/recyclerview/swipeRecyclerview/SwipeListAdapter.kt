@@ -1,4 +1,4 @@
-package com.example.androidpractice.recyclerview
+package com.example.androidpractice.recyclerview.swipeRecyclerview
 
 
 import android.view.LayoutInflater

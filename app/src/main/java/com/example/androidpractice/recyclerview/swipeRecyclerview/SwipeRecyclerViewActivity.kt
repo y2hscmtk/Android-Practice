@@ -1,4 +1,4 @@
-package com.example.androidpractice.recyclerview
+package com.example.androidpractice.recyclerview.swipeRecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

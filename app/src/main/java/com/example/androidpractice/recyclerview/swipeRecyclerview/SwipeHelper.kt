@@ -1,4 +1,4 @@
-package com.example.androidpractice.recyclerview
+package com.example.androidpractice.recyclerview.swipeRecyclerview
 
 import android.graphics.Canvas
 import android.util.Log
@@ -17,7 +17,9 @@ import kotlin.math.*
 //Reference
 //https://velog.io/@nimok97/RecyclerView-%EC%97%90%EC%84%9C-item-Swipe-%ED%95%98%EA%B8%B0-feat.-ItemTouchHelper-ItemTouchUIUtil
 //https://velog.io/@trycatch98/Android-RecyclerView-Swipe-Menu
-//https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper.Callback#getSwipeEscapeVelocity(float
+//https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper.Callback#getSwipeEscapeVelocity(float)
+//https://www.youtube.com/watch?v=1s4bMAyK7oM
+
 
 class SwipeHelper : ItemTouchHelper.Callback()  {
 

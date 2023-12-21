@@ -76,9 +76,16 @@ class SwipeRecyclerViewWithMenuActivity : AppCompatActivity() {
                 recyclerView: RecyclerView,
                 viewHolder: RecyclerView.ViewHolder
             ): Int {
+                val itemViewHolder = viewHolder as ItemVIewHolder
                 val dragFlags = 0
-                val swipeFlags = ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
-                return makeMovementFlags(dragFlags,swipeFlags)
+                // 삭제 버튼이 표시된 상태에서는 오른쪽으로 스와이프 허용 => 다시 되돌릴 수 있도록
+                val swipeFlags = if (itemViewHolder.itemView.scrollX > 0) {
+                    ItemTouchHelper.RIGHT
+                } else {
+                    // 기본 상태에서는 왼쪽으로 스와이프 허용
+                    ItemTouchHelper.LEFT
+                }
+                return makeMovementFlags(dragFlags, swipeFlags)
             }
 
             // 항목이 이동될 경우에 대한 동작 (위,아래 이동)

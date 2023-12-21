@@ -116,6 +116,7 @@
  	- item_swipe2.xml : RecyclerView Item
 
 ### Dependencies
+	// 당겨서 새로고침(Pull to Refresh) 기능 => 아래로 당겨서 리스트 목록 새로고침
 	implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") 
 
  

@@ -83,11 +83,11 @@
 	- id("com.google.devtools.ksp") //room dependency plugin
 
 ### Dependencies
-	- implementation("androidx.room:room-runtime:$roomVersion")
-	- annotationProcessor("androidx.room:room-compiler:$roomVersion")
-	- ksp("androidx.room:room-compiler:$roomVersion")
-	- implementation("androidx.room:room-ktx:$roomVersion")
-	- testImplementation("androidx.room:room-testing:$roomVersion")
+	implementation("androidx.room:room-runtime:$roomVersion")
+	annotationProcessor("androidx.room:room-compiler:$roomVersion")
+	ksp("androidx.room:room-compiler:$roomVersion")
+	implementation("androidx.room:room-ktx:$roomVersion")
+	testImplementation("androidx.room:room-testing:$roomVersion")
 
    ---
 
@@ -116,7 +116,7 @@
  	- item_swipe2.xml : RecyclerView Item
 
 ### Dependencies
-	- implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") 
+	implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") 
 
  
 

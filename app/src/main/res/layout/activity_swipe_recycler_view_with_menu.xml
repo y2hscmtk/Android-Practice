@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".recyclerview.swipeRecyclerview2.SwipeRecyclerViewWithMenuActivity">
 
-    <!--SwipeRefreshLayout-->
+    <!--SwipeRefreshLayout 당겨서 새로고침-->
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"

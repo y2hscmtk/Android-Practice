@@ -18,7 +18,7 @@ class SwipeRecyclerView2Adapter : RecyclerView.Adapter<ItemVIewHolder>() {
         holder.index = list[position]
 
         // 삭제 이벤트?
-        holder.onDelteClick = {
+        holder.onDeleteClick = {
             removeItem(it)
         }
 

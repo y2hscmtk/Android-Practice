@@ -22,18 +22,32 @@
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/textViewDelete"
-        android:layout_width="100dp"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        app:layout_constraintStart_toEndOf="@+id/frameLayoutConstraint"
-        android:text="delete"
-        android:textSize="20dp"
-        android:textColor="#fff"
-        android:background="#f00"/>
-
     <!--Swipe Menu에 해당-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/swipe_menu_container"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/frameLayoutConstraint"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/textViewDelete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="delete"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="#f00"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--구분-->
     <View
         android:layout_width="match_parent"
         android:layout_height="0.8dp"

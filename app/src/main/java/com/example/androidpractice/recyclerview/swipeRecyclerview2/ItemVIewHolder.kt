@@ -33,8 +33,9 @@ class ItemVIewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
             // 참조 찾기
             textView = it.findViewById(R.id.textView) // 인덱스 표시용
-            textViewDelete = it.findViewById(R.id.textViewDelete) //
+            textViewDelete = it.findViewById(R.id.textViewDelete) // 삭제버튼
 
+            // 삭제 버튼 클릭시 동작 정의
             textViewDelete.setOnClickListener {
                 onDeleteClick?.let { onDeleteClick ->
                     onDeleteClick(this)

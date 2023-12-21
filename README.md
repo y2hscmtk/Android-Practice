@@ -100,6 +100,24 @@
 ### Layout
 	- activity_screen_capture.xml
 
+   ---
+
+
+### 8. RecyclerView Swipe Menu
+> RecyclerView Item의 Swipe 엑션을 통해 숨겨진 삭제 버튼이 드러나도록 함
+
+### Code
+	- ItemViewHolder.kt : RecyclerView Item View Holder
+ 	- SwipeRecyclerView2Adapter.kt : RecyclerView Adapter
+  	- SwipeRecyclerViewWithMenuActivity.kt
+ 
+### Layout
+	- activity_swipe_recycler_view_with_menu.xml : RecyclerView Container
+ 	- item_swipe2.xml : RecyclerView Item
+
+### Dependencies
+	- implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") 
+
  
 
 

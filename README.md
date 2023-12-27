@@ -119,6 +119,19 @@
 	// 당겨서 새로고침(Pull to Refresh) 기능 => 아래로 당겨서 리스트 목록 새로고침
 	implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0") 
 
+
+
+### 8. Navigation Drawer 
+> 평소에는 숨겨져 있다가 사용자가 햄버거 메뉴 버튼 클릭시 화면의 구석에서 스와이프 애니메이션과 함께 숨겨진 화면이 등장
+
+### Code
+	- DrawerActivity.kt
+ 
+### Layout
+	- activity_drawer.xml : main
+ 	- navi_drawer.xml : drawer menu
+
+
  
 
 
